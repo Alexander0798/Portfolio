@@ -9,12 +9,37 @@
   </head>
   <body>
     <div class="page">
+      <div class="menu">
+        <div class="menu__burger burger">
+        <div class="burger-icon">
+        <span class="burger-line"></span>
+        </div>
+      </div>
+      <nav class="menu__navigation">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="" class="menu__link link link_active" id="porfolio"
+              >Портфолио</a
+            >
+          </li>
+          <li class="menu__item">
+            <a href="" class="menu__link link" id="skill"
+              >Скиллы</a
+            >
+          </li>
+          <li class="menu__item">
+            <a href="#footer" class="menu__link link" id="contacts"
+              >Контакты</a
+            >
+          </li>
+        </ul>
+      </nav></div>
       <header class="header">
         <div class="header__container">
           <div class="header__img"></div>
           <div class="header__info">
             <h1 class="header__title">Ратушняк Александр Владимирович.</h1>
-            <p class="header__job">Web-Разработчик.</p>
+            <p class="header__job">Frontend-Разработчик.</p>
           </div>
           <div class="header__logo logo">
             <h2 class="logo__title">Программирование:</h2>
@@ -24,25 +49,6 @@
             </div>
           </div>
         </div>
-        <nav class="header__navigation">
-          <ul class="header__list">
-            <li class="header__item">
-              <a href="" class="header__link link link_active" id="porfolio"
-                >Портфолио</a
-              >
-            </li>
-            <li class="header__item">
-              <a href="" class="header__link link" id="skill"
-                >Технические возмоности</a
-              >
-            </li>
-            <li class="header__item">
-              <a href="#footer" class="header__link link" id="contacts"
-                >Контакты</a
-              >
-            </li>
-          </ul>
-        </nav>
       </header>
 
       <main class="main">
@@ -60,7 +66,7 @@
             </li>
             <li class="porfolio__item itmo">
               <a href="#" class="porfolio__link link"
-                ><h2 class="porfolio__link-title">I.T.M.O</h2>
+                ><h2 class="porfolio__link-title">I.T.M.O В&nbsp;разработке</h2>
                 <p class="porfolio__link-description">
                   Адаптивный&nbsp; js&nbsp;&mdash;&nbsp;Попап, Карусель,
                   Валидация&nbsp;форм
@@ -146,7 +152,8 @@
       </main>
 
       <footer class="footer" id="footer">
-        <h2 class="copyright">&copy; Ратушняк Александр Владимирович 2022</h2>
+        <h2 class="copyright">&copy; 2022 Ратушняк Александр Владимирович
+        </h2>
       </footer>
     </div>
     <script src="./js/script.js"></script>

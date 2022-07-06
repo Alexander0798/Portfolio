@@ -1,6 +1,17 @@
-const navLink = [].slice.call(document.querySelectorAll('.header__link'));
-navLink.forEach(function(el) {
-    el.addEventListener('click', function(evt) {
+const menu = document.querySelector('.menu__navigation')
+const menuBurgerButton = document.querySelector('.burger')
+
+menuBurgerButton.addEventListener('click', () => {
+   
+        menu.classList.toggle('active');
+       
+})
+
+
+
+const navLink = [].slice.call(document.querySelectorAll('.menu__link'));
+navLink.forEach(function (el) {
+    el.addEventListener('click', function (evt) {
         evt.preventDefault();
         navLink.forEach((nl) => {
             if (nl !== this) {
@@ -11,8 +22,8 @@ navLink.forEach(function(el) {
     }, false);
 });
 const navLinkSkill = [].slice.call(document.querySelectorAll('.skill__link'));
-navLinkSkill.forEach(function(el) {
-    el.addEventListener('click', function(evt) {
+navLinkSkill.forEach(function (el) {
+    el.addEventListener('click', function (evt) {
         evt.preventDefault();
         navLinkSkill.forEach((nl) => {
             if (nl !== this) {
@@ -31,19 +42,20 @@ const portfolio = document.querySelector('.portfolio')
 const skill = document.querySelector('.skill')
 const contacts = document.querySelector('.contacts')
 
+const toglemain = (sectionElement) => {
+    skill.classList.remove('menu_active')
+    contacts.classList.remove('menu_active')
+    portfolio.classList.remove('menu_active')
+    sectionElement.classList.add('menu_active')
+}
 portfolioLink.addEventListener('click', () => {
-  skill.classList.remove('menu_active')
-  contacts.classList.remove('menu_active')
-  portfolio.classList.add('menu_active')
+    toglemain(portfolio)
 })
 
 skillLink.addEventListener('click', () => {
-  portfolio.classList.remove('menu_active')
-  contacts.classList.remove('menu_active')
-  skill.classList.add('menu_active')
+    toglemain(skill)
 })
 contactsLink.addEventListener('click', () => {
-  portfolio.classList.remove('menu_active')
-  skill.classList.remove('menu_active')
-  contacts.classList.add('menu_active')
+    toglemain(contacts)
+
 })
