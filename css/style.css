@@ -331,6 +331,8 @@ body {
     "skillTitle skillTitle"
     "skillMenu skillDescription";
   gap: 40px 30px;
+  grid-template-columns: 0.5fr 1.5fr;
+  
 }
 .skill__title {
   grid-area: skillTitle;
@@ -343,6 +345,7 @@ body {
 }
 .skill_menu {
   grid-area: skillMenu;
+  
 }
 .skill__list {
   display: flex;
@@ -350,9 +353,8 @@ body {
 }
 .skill__link {
   background-color: rgba(0, 104, 17, 0.4);
-  padding: 10px 0;
+  padding: 10px 5px;
   display: block;
-  min-width: 100px;
   text-align: center;
 }
 .skill__link:hover {
