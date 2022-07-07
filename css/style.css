@@ -105,7 +105,7 @@ body {
   left: 0;
   height: 50px;
   width: 100%;
-  z-index: 1;
+  z-index: 10;
   background-color: rgba(0, 104, 17, 0.4);
 }
 .menu__burger {
@@ -160,9 +160,6 @@ body {
   padding: 15px 25px;
   font-size: 22px;
   line-height: 1.4;
-}
-.active {
-  display: block;
 }
 
 
@@ -333,11 +330,13 @@ body {
   grid-template-areas:
     "skillTitle skillTitle"
     "skillMenu skillDescription";
-  gap: 40px 80px;
+  gap: 40px 30px;
 }
 .skill__title {
   grid-area: skillTitle;
   justify-self: center;
+  font-size: 22px;
+  line-height: 1.4;
 }
 .skill_description {
   grid-area: skillDescription;
@@ -353,7 +352,7 @@ body {
   background-color: rgba(0, 104, 17, 0.4);
   padding: 10px 0;
   display: block;
-  min-width: 130px;
+  min-width: 100px;
   text-align: center;
 }
 .skill__link:hover {
@@ -368,6 +367,9 @@ body {
 .skill_link_active:hover {
   transform: translate(0, 0);
   background-color: rgb(97, 0, 0);
+}
+.scill__block {
+  display: none;
 }
 
 /*-----footer-------------------------------------------------*/
@@ -396,4 +398,10 @@ body {
   height: 40px;
   opacity: 1;
   background: url("../../../img/back_arrow.svg");
+}
+
+
+
+.active {
+  display: block;
 }

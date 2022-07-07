@@ -11,29 +11,28 @@
     <div class="page">
       <div class="menu">
         <div class="menu__burger burger">
-        <div class="burger-icon">
-        <span class="burger-line"></span>
+          <div class="burger-icon">
+            <span class="burger-line"></span>
+          </div>
         </div>
+        <nav class="menu__navigation">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="" class="menu__link link link_active" about="portfolioM"
+                >Портфолио</a
+              >
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link link" about="skillM">Скиллы</a>
+            </li>
+            <li class="menu__item">
+              <a href="#footer" class="menu__link link" about="contactsM"
+                >Контакты</a
+              >
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="menu__navigation">
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a href="" class="menu__link link link_active" id="porfolio"
-              >Портфолио</a
-            >
-          </li>
-          <li class="menu__item">
-            <a href="" class="menu__link link" id="skill"
-              >Скиллы</a
-            >
-          </li>
-          <li class="menu__item">
-            <a href="#footer" class="menu__link link" id="contacts"
-              >Контакты</a
-            >
-          </li>
-        </ul>
-      </nav></div>
       <header class="header">
         <div class="header__container">
           <div class="header__img"></div>
@@ -52,7 +51,7 @@
       </header>
 
       <main class="main">
-        <section class="portfolio menu_active">
+        <section class="portfolio menu_active" id="portfolioM">
           <ul class="portfolio__list">
             <li class="porfolio__item mesto">
               <a
@@ -103,59 +102,53 @@
           </ul>
         </section>
 
-        <section class="skill">
-          <h2 class="skill__title">Владею навыками</h2>
+        <section class="skill" id="skillM">
+          <h2 class="skill__title">Софт Скиллы</h2>
           <nav class="skill_menu">
             <ul class="skill__list">
               <li class="scill__item">
-                <a href="#" class="skill__link link skill_link_active">Html5</a>
+                <a href="#" class="skill__link link skill_link_active" about="Html5">Html5</a>
               </li>
               <li class="scill__item">
-                <a href="#" class="skill__link link">Css3</a>
+                <a href="#" class="skill__link link" about="Css3">Css3</a>
               </li>
               <li class="scill__item">
-                <a href="#" class="skill__link link">JavaScript</a>
+                <a href="#" class="skill__link link" about="JavaScript">JavaScript</a>
               </li>
               <li class="scill__item">
-                <a href="#" class="skill__link link">React.js</a>
+                <a href="#" class="skill__link link" about="React">React.js</a>
               </li>
               <li class="scill__item">
-                <a href="#" class="skill__link link">Node.js</a>
+                <a href="#" class="skill__link link" about="Node">Node.js</a>
               </li>
             </ul>
           </nav>
           <ul class="skill__list skill_description" id="skillDescription">
-            <li class="scill__item">
-              <p class="skill__description">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos
-                at labore asperiores veritatis ab dolore modi qui delectus
-                facilis. Enim eaque debitis, unde suscipit amet autem eligendi
-                nam ullam quae.
-              </p>
+            <li class="scill__block active" id="Html5">
+                Пишу семантичесткую валидную вёрстку
             </li>
-            <li class="scill__item">
-              <p class="skill__description"></p>
+            <li class="scill__block" id="Css3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus tempore vero officiis atque aspernatur voluptatum optio recusandae in exercitationem blanditiis!
             </li>
-            <li class="scill__item">
-              <p class="skill__description"></p>
+            <li class="scill__block" id="JavaScript">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat officia omnis dolore est.
             </li>
-            <li class="scill__item">
-              <p class="skill__description"></p>
+            <li class="scill__block" id="React">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum at corporis rem dolorem! Explicabo, eos fugit.
             </li>
-            <li class="scill__item">
-              <p class="skill__description"></p>
+            <li class="scill__block" id="Node">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam molestiae deserunt vitae possimus officiis nesciunt consequatur obcaecati eum sequi aut!
             </li>
           </ul>
         </section>
 
-        <section class="contacts">asdfsadfsadfsadf</section>
+        <section class="contacts" id="contactsM">asdfsadfsadfsadf</section>
       </main>
 
       <footer class="footer" id="footer">
-        <h2 class="copyright">&copy; 2022 Ратушняк Александр Владимирович
-        </h2>
+        <h2 class="copyright">&copy; 2022 Ратушняк Александр Владимирович</h2>
       </footer>
     </div>
-    <script src="./js/script.js"></script>
+    <script src="./js/script.js" type="module"></script>
   </body>
 </html>
